@@ -1,4 +1,6 @@
 import java.awt.Color;
+import java.awt.Font;
+
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -20,7 +22,7 @@ public class MyFrame extends JFrame{
         JLabel lbl2= new JLabel("Old Records: ");
         lbl1.setText("New Records: ");
         lbl1.setForeground(new Color(0xFF0000));
-        
+        lbl1.setFont(new Font("Consolas", Font.PLAIN, 20));
 
         this.add(lbl1);
         //this.add(lbl2);
