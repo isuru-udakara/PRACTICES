@@ -6,6 +6,7 @@ public class MyFrame extends JFrame{
         this.setTitle("My Frame");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setSize(600, 500);
+        this.setResizable(true);
     }
 
     public static void main(String[] params){
