@@ -1,3 +1,4 @@
+import java.awt.Color;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 
@@ -10,6 +11,7 @@ public class MyFrame extends JFrame{
         this.setLocationRelativeTo(null);
         ImageIcon image= new ImageIcon("icons\\home.png");
         this.setIconImage(image.getImage());
+        this.getContentPane().setBackground(new Color(240, 240, 240));
         this.setVisible(true);
     }
 
