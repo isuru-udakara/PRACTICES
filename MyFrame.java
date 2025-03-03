@@ -30,9 +30,12 @@ public class MyFrame extends JFrame{
         lbl1.setBorder(border);
         lbl1.setVerticalAlignment(JLabel.CENTER);
         lbl1.setHorizontalAlignment(JLabel.CENTER);
+        lbl1.setBounds(50, 50, 200, 40);
+        lbl2.setBounds(50, 100, 200, 40);
 
         this.add(lbl1);
-        //this.add(lbl2);
+        this.setLayout(null);
+        this.add(lbl2);
     }
 
     public static void main(String[] params){
