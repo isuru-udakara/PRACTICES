@@ -23,6 +23,8 @@ public class MyFrame extends JFrame{
         lbl1.setText("New Records: ");
         lbl1.setForeground(new Color(0xFF0000));
         lbl1.setFont(new Font("Consolas", Font.PLAIN, 20));
+        lbl1.setBackground(Color.black);
+        lbl1.setOpaque(true);
 
         this.add(lbl1);
         //this.add(lbl2);
