@@ -28,6 +28,8 @@ public class MyFrame extends JFrame{
         lbl1.setBackground(Color.black);
         lbl1.setOpaque(true);
         lbl1.setBorder(border);
+        lbl1.setVerticalAlignment(JLabel.CENTER);
+        lbl1.setHorizontalAlignment(JLabel.CENTER);
 
         this.add(lbl1);
         //this.add(lbl2);
