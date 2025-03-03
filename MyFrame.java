@@ -20,7 +20,9 @@ public class MyFrame extends JFrame{
 
         // adding a label 
         JLabel lbl1= new JLabel();
-        JLabel lbl2= new JLabel("Old Records: ");
+        JLabel lbl2= new JLabel();
+        ImageIcon imglbl= new ImageIcon("icons\\home.png");
+        lbl2.setIcon(imglbl);
         Border border= BorderFactory.createLineBorder(Color.green, 3);
         lbl1.setText("New Records: ");
         lbl1.setForeground(new Color(0xFF0000));
