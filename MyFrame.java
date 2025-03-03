@@ -1,9 +1,10 @@
 import java.awt.Color;
 import java.awt.Font;
-
+import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.border.Border;
 
 public class MyFrame extends JFrame{
     MyFrame(){
@@ -20,11 +21,13 @@ public class MyFrame extends JFrame{
         // adding a label 
         JLabel lbl1= new JLabel();
         JLabel lbl2= new JLabel("Old Records: ");
+        Border border= BorderFactory.createLineBorder(Color.green, 3);
         lbl1.setText("New Records: ");
         lbl1.setForeground(new Color(0xFF0000));
         lbl1.setFont(new Font("Consolas", Font.PLAIN, 20));
         lbl1.setBackground(Color.black);
         lbl1.setOpaque(true);
+        lbl1.setBorder(border);
 
         this.add(lbl1);
         //this.add(lbl2);
