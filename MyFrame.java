@@ -9,6 +9,8 @@ import javax.swing.JFrame;
 import javax.swing.JTextField;
 
 public class MyFrame extends JFrame implements ActionListener{
+    JButton btn;
+    JTextField tf;
     MyFrame(){
         this.setTitle("My Frame");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -21,11 +23,11 @@ public class MyFrame extends JFrame implements ActionListener{
         this.setVisible(true);
         this.setLayout(new FlowLayout());
 
-        JButton btn= new JButton("Submit");
+        btn= new JButton("Submit");
         btn.addActionListener(this);
 
         // creating a textbox 
-        JTextField tf= new JTextField();
+        tf= new JTextField();
         tf.setPreferredSize(new Dimension(250, 40));
 
         this.add(btn);
@@ -39,6 +41,8 @@ public class MyFrame extends JFrame implements ActionListener{
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        
+        if(e.getSource() == btn){
+            System.out.println(tf.getText());
+        }
     }
 }
