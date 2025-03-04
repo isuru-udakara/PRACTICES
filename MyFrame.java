@@ -1,10 +1,12 @@
 import java.awt.Color;
 import java.awt.Dimension;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JTextField;
 
-public class MyFrame extends JFrame{
+public class MyFrame extends JFrame implements ActionListener{
     MyFrame(){
         this.setTitle("My Frame");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -26,5 +28,10 @@ public class MyFrame extends JFrame{
 
     public static void main(String[] params){
         new MyFrame();
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        
     }
 }
