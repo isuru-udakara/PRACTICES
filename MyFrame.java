@@ -1,6 +1,8 @@
 import java.awt.Color;
+import java.awt.Dimension;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
+import javax.swing.JTextField;
 
 public class MyFrame extends JFrame{
     MyFrame(){
@@ -13,6 +15,13 @@ public class MyFrame extends JFrame{
         this.setIconImage(image.getImage());
         this.getContentPane().setBackground(new Color(240, 240, 240));
         this.setVisible(true);
+
+        // creating a textbox 
+        JTextField tf= new JTextField();
+        tf.setPreferredSize(new Dimension(250, 40));
+
+        this.add(tf);
+        this.pack();
     }
 
     public static void main(String[] params){
