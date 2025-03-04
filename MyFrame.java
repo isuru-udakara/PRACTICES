@@ -1,6 +1,7 @@
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JButton;
@@ -25,6 +26,7 @@ public class MyFrame extends JFrame implements ActionListener{
         button.setFocusable(false);
         button.addActionListener(this);
         button.setBounds(200, 100, 100, 50);
+        button.setBorder(BorderFactory.createEtchedBorder());
 
         this.add(button);
     }
