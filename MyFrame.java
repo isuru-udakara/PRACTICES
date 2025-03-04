@@ -1,8 +1,10 @@
 import java.awt.Color;
 import java.awt.Dimension;
+import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.ImageIcon;
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JTextField;
 
@@ -17,11 +19,16 @@ public class MyFrame extends JFrame implements ActionListener{
         this.setIconImage(image.getImage());
         this.getContentPane().setBackground(new Color(240, 240, 240));
         this.setVisible(true);
+        this.setLayout(new FlowLayout());
+
+        JButton btn= new JButton("Submit");
+        btn.addActionListener(this);
 
         // creating a textbox 
         JTextField tf= new JTextField();
         tf.setPreferredSize(new Dimension(250, 40));
 
+        this.add(btn);
         this.add(tf);
         this.pack();
     }
