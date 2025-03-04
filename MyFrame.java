@@ -22,6 +22,7 @@ public class MyFrame extends JFrame implements ActionListener{
         // adding a button
         button= new JButton();
         button.setText("Click Here");
+        button.setFocusable(false);
         button.addActionListener(this);
         button.setBounds(200, 100, 100, 50);
 
