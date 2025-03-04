@@ -1,9 +1,12 @@
 import java.awt.Color;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JButton;
 
-public class MyFrame extends JFrame{
+public class MyFrame extends JFrame implements ActionListener{
+    JButton button;
     MyFrame(){
         this.setTitle("My Frame");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -17,7 +20,8 @@ public class MyFrame extends JFrame{
         this.setLayout(null);
 
         // adding a button
-        JButton button= new JButton();
+        button= new JButton();
+        button.addActionListener(this);
         button.setBounds(200, 100, 100, 50);
 
         this.add(button);
@@ -25,5 +29,12 @@ public class MyFrame extends JFrame{
 
     public static void main(String[] params){
         new MyFrame();
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        if(e.getSource() == button){
+            System.out.println("Button was clicked.");
+        }
     }
 }
